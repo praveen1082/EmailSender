@@ -21,7 +21,7 @@ app.post('/sendemail', urlencodedParser, function (req, res) {
     var data = JSON.stringify(response);
     console.log(data);
     fs.writeFileSync('./data.json', data);
-    var transporter = nodemailer.createTransport("SMTP", {
+    var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
             user: 'praveenpanta1082@gmail.com',
