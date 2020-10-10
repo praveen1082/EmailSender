@@ -24,14 +24,14 @@ app.post('/sendemail', urlencodedParser, function (req, res) {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'praveenpanta1082@gmail.com',
-            pass: 'passwordchainahernula'
+            user: 'email.com',
+            pass: 'password.com'
         }
     });
     var parsed = JSON.parse(fs.readFileSync('./data.json'), 'utf-8');
     console.log(parsed.name)
     var mailOptions = {
-        from: 'praveenpanta1082@gmail.com',
+        from: 'someemail.com',
         to: parsed.email,
         subject: parsed.subject,
         text: parsed.message,
@@ -44,7 +44,7 @@ app.post('/sendemail', urlencodedParser, function (req, res) {
             console.log('Email Sent: ' + info.response)
         }
     });
-    response.writeHead(301, { Location: '/sendemail' });
+    res.writeHead(301, { Location: '/sendemail' });
     res.end();
     //res.end(JSON.stringify(response));
 })
