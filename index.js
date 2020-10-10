@@ -39,13 +39,13 @@ var parsed = JSON.parse(fs.readFileSync('./data.json'), 'utf-8');
         service: 'gmail',
         secure: true,
         auth: {
-            user: 'praveenpanta1082@gmail.com',
-            pass: '19731082panta0108527@00405080356251Praveen'
+            user: 'EmailHere',
+            pass: 'PasswordHere'
         }
     });
 
     var mailOptions = {
-        from: 'praveenpanta1082@gmail.com',
+        from: 'EmailHere',
         to: parsed.email,
         subject: parsed.subject,
         text: parsed.message,
