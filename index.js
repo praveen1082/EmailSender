@@ -25,7 +25,7 @@ app.post('/sendemail', urlencodedParser, function (req, res) {
         service: 'gmail',
         auth: {
             user: 'praveenpanta1082@gmail.com',
-            pass: 'passwordchainahernula'
+            pass: '19731082panta0108527@00405080356251Praveen'
         }
     });
     var parsed = JSON.parse(fs.readFileSync('./data.json'), 'utf-8');
@@ -44,7 +44,7 @@ app.post('/sendemail', urlencodedParser, function (req, res) {
             console.log('Email Sent: ' + info.response)
         }
     });
-    response.writeHead(301, { Location: '/sendemail' });
+    res.writeHead(301, { Location: '/sendemail' });
     res.end();
     //res.end(JSON.stringify(response));
 })
