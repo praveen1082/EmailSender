@@ -25,7 +25,7 @@ app.post('/sendemail', urlencodedParser, function (req, res) {
         service: 'gmail',
         auth: {
             user: 'praveenpanta1082@gmail.com',
-            pass: '00405080356251panta'
+            pass: 'passwordchainahernula'
         }
     });
     var parsed = JSON.parse(fs.readFileSync('./data.json'), 'utf-8');
