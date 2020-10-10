@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Send Email</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <!--<script src='main.js'></script>-->
+</head>
+
+<body>
+    <div class="card">
+        <div class="welcome">
+            <h3>Welcome to email sender</h3>
+        </div>
+        <form action="/sendemail" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="persons_name" id="name" placeholder="Your full name here.." />
+            <br />
+            <label for="email">Email</label>
+            <input type="email" name="persons_email" id="email" placeholder="Please insert your email here.." />
+            <br />
+            <label for="sub">Subject</label>
+            <input type="text" name="persons_subject" id="sub" placeholder="Subject" />
+            <br />
+            <label for="message">Message</label>
+            <textarea rows="23" cols="18" name="persons_message" id="message" placeholder="Message here"></textarea>
+            <br />
+            <div class="butn"><button type="submit" name="persons_send" value="Send" >Send</button></div><br />
+            <input type="hidden" name="dateandtime" value="" />
+        </form>
+    </div>
+    <script>
+    //     function hello(){
+    //         var email = document.getElementById('email').value;
+    //         console.log(email);
+    //         var pattern = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+    //         if(!pattern.match(email)){
+    //             alert("Email Pattern does not match");
+    //         }else if((document.getElementById('sub').value && 
+    //                 document.getElementById('message').value)==null){
+    //                     alert("Subject and message cannot be blank");
+    //         }else{
+    //             alert("Wooo...Your email has been sent!!");
+    //         }
+    //     }
+    </script>
+</body>
+
+</html>

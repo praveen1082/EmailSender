@@ -1,0 +1,18 @@
+{
+  "name": "emailsender",
+  "version": "1.0.0",
+  "description": "This system is developed as a practice of a node.js to send a email to the user inserted email",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Praveen Panta",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "js-alert": "^1.0.4",
+    "nodemailer": "^6.4.13",
+    "popups": "^1.1.3"
+  }
+}
